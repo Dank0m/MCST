@@ -12,7 +12,6 @@ module memory #(
     output reg [DATA_W-1:0] data_out
 );
 
-
 reg [DATA_W-1:0] memory [MEM_SIZE-1:0];
 
 always @(posedge clk) begin

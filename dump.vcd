@@ -1,0 +1,191 @@
+$date
+	Tue Apr 22 17:09:35 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module check_divisibility_tb $end
+$var wire 1 ! divisibility $end
+$var reg 8 " data [7:0] $end
+$scope module test_module $end
+$var wire 8 # data [7:0] $end
+$var reg 1 ! divisibility $end
+$var integer 32 $ even_count [31:0] $end
+$var integer 32 % i [31:0] $end
+$var integer 32 & inverted_sum [31:0] $end
+$var integer 32 ' odd_count [31:0] $end
+$var integer 32 ( sum_even [31:0] $end
+$var integer 32 ) sum_odd [31:0] $end
+$upscope $end
+$upscope $end
+$scope module memory_tb $end
+$var wire 10 * data_out [9:0] $end
+$var reg 3 + addr_r [2:0] $end
+$var reg 3 , addr_w [2:0] $end
+$var reg 1 - clk $end
+$var reg 10 . data_in [9:0] $end
+$var reg 1 / read_flag $end
+$var reg 1 0 write_flag $end
+$scope module test_module $end
+$var wire 3 1 addr_r [2:0] $end
+$var wire 3 2 addr_w [2:0] $end
+$var wire 1 - clk $end
+$var wire 10 3 data_in [9:0] $end
+$var wire 1 / read_flag $end
+$var wire 1 0 write_flag $end
+$var reg 10 4 data_out [9:0] $end
+$upscope $end
+$upscope $end
+$scope module check_divisibility_tb $end
+$scope module test_module $end
+$upscope $end
+$upscope $end
+$scope module memory_tb $end
+$scope module test_module $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 4
+b0 3
+b0 2
+b0 1
+00
+0/
+b0 .
+0-
+b0 ,
+b0 +
+bx *
+b1 )
+b1 (
+b100 '
+b0 &
+b1000 %
+b100 $
+b11 #
+b11 "
+1!
+$end
+#5
+1-
+#10
+b1000 %
+b100 '
+b100 $
+b1 )
+b1 (
+0-
+b100100011 .
+b100100011 3
+10
+b110 "
+b110 #
+#15
+1-
+#20
+b11111111111111111111111111111111 &
+b1000 %
+b100 '
+b100 $
+b11 )
+b100 (
+0-
+1/
+00
+b11111101 "
+b11111101 #
+#25
+b100100011 *
+b100100011 4
+1-
+#30
+b10 &
+b1000 %
+b100 '
+b100 $
+b100 )
+b10 (
+0-
+b1 +
+b1 1
+b1 ,
+b1 2
+b10111100 .
+b10111100 3
+10
+b11111010 "
+b11111010 #
+#35
+bx *
+bx 4
+1-
+#40
+0!
+b11111111111111111111111111111111 &
+b1000 %
+b100 '
+b100 $
+b0 )
+b1 (
+0-
+00
+b1 "
+b1 #
+#45
+b10111100 *
+b10111100 4
+1-
+#50
+b0 &
+b100 )
+b1000 %
+b100 '
+b100 $
+b100 (
+0-
+0/
+b11111111 "
+b11111111 #
+#55
+1-
+#60
+b11111111111111111111111111111111 &
+b1000 %
+b100 '
+b100 $
+b0 )
+b1 (
+0-
+b11 +
+b11 1
+b10 ,
+b10 2
+b11011111 .
+b11011111 3
+1/
+10
+b100 "
+b100 #
+#65
+bx *
+bx 4
+1-
+#70
+b0 &
+b11 )
+b1000 %
+b100 '
+b100 $
+b11 (
+0-
+b11111100 "
+b11111100 #
+#75
+1-
+#80
+0-

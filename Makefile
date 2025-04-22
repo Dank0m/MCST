@@ -1,8 +1,5 @@
-SHELL = powershell
-SHELLFLAGS = -NoProfile -Command
-
 # Автоматически найти все .v-файлы, если не указано вручную
-verilog_files ?= $$(Get-ChildItem -Recurse -Filter *.v | ForEach-Object { $$_.FullName })
+verilog_files ?= $(shell find . -name "*.v")
 
 # Проверка, что файлы существуют
 ifeq ($(verilog_files),)
@@ -11,9 +8,9 @@ endif
 
 .PHONY: run clean
 run:
-	iverilog.exe $(verilog_files)
-	vvp.exe .\a.out
-	gtkwave.exe .\dump.vcd
+	iverilog $(verilog_files) -o a.out
+	vvp a.out
+	gtkwave dump.vcd
 
 clean:
-	Remove-Item -Force a.out, dump.vcd -ErrorAction SilentlyContinue
+	rm -f a.out dump.vcd

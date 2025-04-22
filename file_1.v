@@ -10,7 +10,8 @@ module check_divisibility #(
 integer i;
 integer sum_even, sum_odd;
 integer even_count, odd_count;
-//integer debug;
+integer inverted_sum;
+
 
 always @(*) 
 begin
@@ -33,8 +34,8 @@ begin
             odd_count = odd_count + 1;
         end
     end
-    //debag = ((even_count - sum_even) - (odd_count - sum_odd))%3;
-    if (data[DATA_W-1] == 0 && (sum_even - sum_odd)%3==0 || data[DATA_W-1] == 1 && (((even_count - sum_even) - (odd_count - sum_odd)))%3==1)
+    inverted_sum = ((even_count - sum_even) - (odd_count - sum_odd))%3;
+    if (data[DATA_W-1] == 0 && (sum_even - sum_odd)%3==0 || data[DATA_W-1] == 1 && (inverted_sum == -1 || inverted_sum == 2))
     begin
         divisibility <= 1'b1; 
     end

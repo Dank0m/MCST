@@ -45,7 +45,7 @@ initial begin
     
     write_flag = 1;
     read_flag = 1;
-    data_in = 10'hABC;
+    data_in = 10'hBC;
     addr_w = 3'b001;
     addr_r = 3'b001;
     #10;
@@ -59,7 +59,7 @@ initial begin
 
     write_flag = 1;
     read_flag = 1;
-    data_in = 10'h3FF;
+    data_in = 10'hDF;
     addr_w = 3'b010;
     addr_r = 3'b011;
     #20;
